@@ -38,11 +38,21 @@
             <li><a href="#main">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#motion">Motion</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="nav-item-has-dropdown">
+              <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                More
+                <span class="nav-dropdown-icon" aria-hidden="true">▾</span>
+              </button>
+              <ul class="nav-dropdown">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#badges">Badges</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div class="actions">
@@ -65,6 +75,7 @@
           <p class="kicker">Hello, I'm</p>
           <h1>Satwik Rai — Android Developer</h1>
           <p class="subtitle">Kotlin • Jetpack Compose • XML • Retrofit • Firebase • REST APIs</p>
+          <p class="android-slogan">"Compose motion-first Android experiences that feel snappy, human, and unmistakably green."</p>
           <div class="cta">
             <a class="btn btn-primary" href="#projects">View Projects</a>
             <a class="btn btn-ghost" href="assets/resume.pdf" download target="_blank">Download Resume</a>
@@ -79,17 +90,35 @@
           <div class="device-mock" aria-hidden="true">
             <div class="notch"></div>
             <div class="screen">
-              <div class="status-bar">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-              <div class="cards">
-                <div class="ui-card"></div>
-                <div class="ui-card"></div>
-                <div class="ui-card"></div>
-              </div>
+              <img src="assets/anim/Android 3D animation.gif" alt="3D Android mascot animation playing inside a device mockup" class="hero-gif" loading="lazy" decoding="async" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="motion" class="section container motion-showcase" data-reveal>
+        <div class="panel">
+          <div class="motion-header">
+            <h2>Android Motion Lab</h2>
+            <p>I build Android apps end-to-end—wiring Compose UI states, shipping Kotlin-first architectures, and layering motion cues so every release feels premium on Play Store devices.</p>
+          </div>
+          <div class="motion-grid">
+            <figure class="motion-card">
+              <img src="assets/anim/Android Studio New Logo.gif" alt="Android Studio splash animation" loading="lazy" />
+              <figcaption>Splash motion I drop into new apps to brand the build from the first frame.</figcaption>
+            </figure>
+            <figure class="motion-card">
+              <img src="assets/anim/Android 3D animation.gif" alt="3D Android logo animation" loading="lazy" />
+              <figcaption>3D Droid mascot I pair with onboarding flows to keep users hooked.</figcaption>
+            </figure>
+            <figure class="motion-card">
+              <img src="assets/anim/Man working on computer.gif" alt="Designer working on Android app animation" loading="lazy" />
+              <figcaption>Peek at my dev workflow—design systems wired straight into Compose.</figcaption>
+            </figure>
+            <figure class="motion-card">
+              <img src="assets/anim/Mobile App Showcase.gif" alt="Mobile app cards animation" loading="lazy" />
+              <figcaption>Carousel concept I reuse for feature highlights inside shipped apps.</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -112,28 +141,36 @@
         <div class="panel">
           <h2>Skills</h2>
           <div class="chips">
-          <span class="chip">Android Development</span>
-          <span class="chip">Kotlin</span>
-          <span class="chip">Jetpack Compose</span>
-          <span class="chip">XML</span>
-          <span class="chip">Android Studio</span>
-          <span class="chip">Retrofit</span>
-          <span class="chip">RESTful APIs</span>
-          <span class="chip">Firebase</span>
-          <span class="chip">Git</span>
-          <span class="chip">Java</span>
-          <span class="chip">C++</span>
-          <span class="chip">C</span>
-          <span class="chip">MySQL</span>
-          <span class="chip">Data Structures</span>
-          <span class="chip">OOP</span>
-          <span class="chip">Mobile App Lifecycle</span>
-          <span class="chip">Problem Solving</span>
-          <span class="chip">Leadership</span>
-          <span class="chip">Critical Thinking</span>
-          <span class="chip">Communication</span>
-          <span class="chip">Adaptability</span>
-          <span class="chip">Teamwork</span>
+          <span class="chip chip--icon" title="Kotlin">
+            <img src="assets/skills/kotlin.png" alt="Kotlin" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="Jetpack Compose">
+            <img src="assets/skills/Jetpack Compose.png" alt="Jetpack Compose" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="XML">
+            <img src="assets/skills/XML.png" alt="XML" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="Android Studio">
+            <img src="assets/skills/Android Studio.png" alt="Android Studio" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="RESTful APIs">
+            <img src="assets/skills/RESTful APIs.webp" alt="RESTful APIs" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="Firebase">
+            <img src="assets/skills/Firebase.png" alt="Firebase" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="Java">
+            <img src="assets/skills/java.png" alt="Java" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="C++">
+            <img src="assets/skills/c++.png" alt="C++" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="C">
+            <img src="assets/skills/c.png" alt="C" class="chip-logo" />
+          </span>
+          <span class="chip chip--icon" title="MySQL">
+            <img src="assets/skills/mysql.png" alt="MySQL" class="chip-logo" />
+          </span>
           </div>
         </div>
       </section>
@@ -195,13 +232,41 @@
         <div class="panel">
           <h2>Experience</h2>
           <div class="timeline">
-          <div class="timeline-item">
-            <div class="time">Apr — May 2025</div>
-            <div class="content">
-              <h3>C++ Intern • CodSoft</h3>
-              <p>Built 4 C++ projects focusing on object-oriented programming, algorithms, and problem-solving.</p>
+            <div class="timeline-item">
+              <div class="time">Nov 2025 — Present</div>
+              <div class="content">
+                <h3>Internshala Student Partner (ISP) • Internshala</h3>
+                <p>Driving campus outreach for Internshala, helping students discover internships and trainings through events, promotions, and peer engagement.</p>
+                <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">Gurugram, Haryana, India · Remote · Part-time</p>
+              </div>
             </div>
-          </div>
+
+            <div class="timeline-item">
+              <div class="time">Oct 2025 — Present</div>
+              <div class="content">
+                <h3>Android Developer • TechieHelp</h3>
+                <p>Building and maintaining Android apps with Kotlin, XML, and modern Android practices; collaborating with remote teams to ship features and fix bugs.</p>
+                <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">Jodhpur, Rajasthan, India · Remote · Internship · Mobile Application Development, Android Development</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time">Jul 2025 — Nov 2025</div>
+              <div class="content">
+                <h3>Campus Ambassador • GirlScript Summer of Code</h3>
+                <p>Promoted open-source culture on campus, encouraged student participation, and coordinated with organizers to spread awareness about GSSoC programs.</p>
+                <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">India · Remote · Full-time</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time">Apr 2025 — May 2025</div>
+              <div class="content">
+                <h3>C++ Developer • CodSoft</h3>
+                <p>Worked on C++ projects focused on OOP, problem-solving, and writing clean, efficient code.</p>
+                <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">India · Remote · Internship</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -211,17 +276,39 @@
           <h2>Education</h2>
           <div class="timeline">
           <div class="timeline-item">
-            <div class="time">Expected Jul 2026</div>
+            <div class="time">Jul 2023 — Aug 2026</div>
             <div class="content">
-              <h3>Bachelor of Computer Applications (BCA), Computer Science</h3>
-              <p>Mahatma Gandhi Kashi Vidyapeeth, Varanasi</p>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <p>Mahatma Gandhi Kashi Vidyapith (MGKVP), Varanasi</p>
+              <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">
+                C, C++, OOP, Data Structures, Operating Systems, DBMS, Networking, Software Project Management, Computer Architecture, and Graphics.
+              </p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="time">May 2023</div>
+            <div class="time">Apr 2022 — May 2023</div>
             <div class="content">
-              <h3>Senior Secondary (XII), Science</h3>
-              <p>Gyandeep English School, Varanasi</p>
+              <h3>Senior Secondary (Class XII)</h3>
+              <p>Central Board of Secondary Education (CBSE)</p>
+              <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">Grade: B</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">Apr 2020 — May 2021</div>
+            <div class="content">
+              <h3>High School (Class X)</h3>
+              <p>Central Board of Secondary Education (CBSE)</p>
+              <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">Grade: A</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="time">Jan 2022 — Feb 2022</div>
+            <div class="content">
+              <h3>Course on Computer Concepts (CCC)</h3>
+              <p>NIELIT — National Institute of Electronics & Information Technology</p>
+              <p style="margin-top:4px; color:var(--muted); font-size:0.9rem;">
+                Grade: B • Microsoft Office, LibreOffice, Networking, and IT fundamentals.
+              </p>
             </div>
           </div>
           </div>
@@ -231,13 +318,360 @@
       <section id="certifications" class="section container" data-reveal>
         <div class="panel">
           <h2>Certifications</h2>
-          <ul class="tags" style="flex-wrap: wrap;">
-            <li>CCC — NIELIT (Mar 2022)</li>
-            <li>Cybersecurity Analyst Job Simulation — Tata Group-Forage (Apr 2025)</li>
-            <li>Cybersecurity Certificate — ROOTX Security (KAAL CODERS) (Mar 2024)</li>
-            <li>Effective Leadership — HP LIFE (Jun 2025)</li>
-            <li>Triwizardathon — Microsoft Learn Student Ambassadors (Aug 2025)</li>
-          </ul>
+          <div class="cert-grid">
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Data Structures and Algorithms using Java</h3>
+                <span class="cert-org">NPTEL • Nov 2025</span>
+              </div>
+              <p class="cert-body">Core DSA with Java—arrays, linked lists, trees and graphs—applied to real problem-solving.</p>
+              <ul class="cert-tags">
+                <li>Java</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Java Programming Fundamentals</h3>
+                <span class="cert-org">Infosys Springboard • Nov 2025</span>
+              </div>
+              <p class="cert-body">OOP, collections, and exception handling, forming a solid backend for Android apps.</p>
+              <ul class="cert-tags">
+                <li>Java</li>
+                <li>OOP</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Application Developer – Web & Mobile</h3>
+                <span class="cert-org">Skill India Digital Hub • Oct 2025</span>
+              </div>
+              <p class="cert-body">Designed scalable web and mobile apps with APIs, caching, queues, and microservices.</p>
+              <ul class="cert-tags">
+                <li>APIs</li>
+                <li>Microservices</li>
+                <li>Caching</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Postman API Fundamentals Student Expert</h3>
+                <span class="cert-org">Postman • Oct 2025</span>
+              </div>
+              <p class="cert-body">Built and tested REST APIs using Postman collections, environments, and test scripts.</p>
+              <ul class="cert-tags">
+                <li>Postman</li>
+                <li>API Testing</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>AI Appreciate & AI Aware Badges – AI For All</h3>
+                <span class="cert-org">Intel • Sep 2025</span>
+              </div>
+              <p class="cert-body">Learned how AI systems are built, evaluated, and used responsibly across domains.</p>
+              <ul class="cert-tags">
+                <li>AI Basics</li>
+                <li>Responsible AI</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Application Security Analyst</h3>
+                <span class="cert-org">Reliance Foundation • Sep 2025</span>
+              </div>
+              <p class="cert-body">Studied secure coding patterns, threat models, and how to protect apps in production.</p>
+              <ul class="cert-tags">
+                <li>App Security</li>
+                <li>Secure Coding</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Android 14 & Kotlin Development Masterclass</h3>
+                <span class="cert-org">Udemy • Sep 2025</span>
+              </div>
+              <p class="cert-body">Hands-on apps with Kotlin, XML, Jetpack Compose, and MVVM for modern Android.</p>
+              <ul class="cert-tags">
+                <li>Android</li>
+                <li>Kotlin</li>
+                <li>Jetpack Compose</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>SOAR – AI to be Aware</h3>
+                <span class="cert-org">Microsoft • Sep 2025</span>
+              </div>
+              <p class="cert-body">Intro to AI, ML and cybersecurity concepts for intelligent, safe applications.</p>
+              <ul class="cert-tags">
+                <li>AI</li>
+                <li>Cybersecurity</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Introduction to Prompt Engineering with GitHub Copilot</h3>
+                <span class="cert-org">Simplilearn • Sep 2025</span>
+              </div>
+              <p class="cert-body">Used GitHub Copilot to speed up coding, refactors, and documentation workflows.</p>
+              <ul class="cert-tags">
+                <li>Prompt Engineering</li>
+                <li>GitHub Copilot</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Azure Database for PostgreSQL – Query Tuning</h3>
+                <span class="cert-org">Microsoft • Sep 2025</span>
+              </div>
+              <p class="cert-body">Learned how to profile and optimize SQL queries for reliable production systems.</p>
+              <ul class="cert-tags">
+                <li>SQL</li>
+                <li>Performance</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Hackathons & Ideathons</h3>
+                <span class="cert-org">GDSC CRCE • MLSA GLA • HashTag Official • 2025</span>
+              </div>
+              <p class="cert-body">Shipped prototypes fast in Bit N Build, Triwizardathon, and TroubleShoot Ideathon.</p>
+              <ul class="cert-tags">
+                <li>Web Dev</li>
+                <li>Pitching</li>
+                <li>Teamwork</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Leadership & Communication</h3>
+                <span class="cert-org">HP LIFE • 2025</span>
+              </div>
+              <p class="cert-body">Practice leading teams, taking decisions, and communicating clearly under pressure.</p>
+              <ul class="cert-tags">
+                <li>Leadership</li>
+                <li>Communication</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Security & Cyber Workshops</h3>
+                <span class="cert-org">Forage • RootX Security • 2024–2025</span>
+              </div>
+              <p class="cert-body">Hands-on labs in IAM, cyber threats, and incident response for secure systems.</p>
+              <ul class="cert-tags">
+                <li>Cybersecurity</li>
+                <li>IAM</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>C++ Intern</h3>
+                <span class="cert-org">CodSoft • May 2025</span>
+              </div>
+              <p class="cert-body">Implemented C++ projects focusing on OOP, problem-solving, and clean code.</p>
+              <ul class="cert-tags">
+                <li>C++</li>
+                <li>OOP</li>
+              </ul>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-header">
+                <h3>Course on Computer Concepts (CCC)</h3>
+                <span class="cert-org">NIELIT • Mar 2022</span>
+              </div>
+              <p class="cert-body">Foundation in computers, office tools, and IT fundamentals.</p>
+              <ul class="cert-tags">
+                <li>IT Basics</li>
+                <li>Productivity Tools</li>
+              </ul>
+            </article>
+          </div>
+
+          <h3 style="margin-top:24px; font-size:1rem; color:var(--muted);">Certificate Gallery</h3>
+          <div class="cert-media-grid">
+            <!-- Image-based certificates -->
+            <figure class="cert-media-card">
+              <img src="assets/Certifications/AI_APPRECIATE_CERTIFICATE.jpeg" alt="Intel AI Appreciate Certificate" loading="lazy" />
+              <figcaption>Intel • AI Appreciate Certificate (image)</figcaption>
+            </figure>
+            <figure class="cert-media-card">
+              <img src="assets/Certifications/AI_AWARE_CERTIFICATE.jpeg" alt="Intel AI Aware Certificate" loading="lazy" />
+              <figcaption>Intel • AI Aware Certificate (image)</figcaption>
+            </figure>
+            <figure class="cert-media-card">
+              <img src="assets/Certifications/codsoft.jpeg" alt="CodSoft C++ Intern Certificate" loading="lazy" />
+              <figcaption>CodSoft • C++ Intern (image)</figcaption>
+            </figure>
+            <figure class="cert-media-card">
+              <img src="assets/Certifications/google developer student clubs.jpeg" alt="GDSC Bit N Build Certificate" loading="lazy" />
+              <figcaption>GDSC CRCE • Bit N Build Hackathon (image)</figcaption>
+            </figure>
+            <figure class="cert-media-card">
+              <img src="assets/Certifications/mlsa gla.jpeg" alt="MLSA Triwizardathon Certificate" loading="lazy" />
+              <figcaption>MLSA GLA • Triwizardathon (image)</figcaption>
+            </figure>
+            <figure class="cert-media-card">
+              <img src="assets/Certifications/rootx.jpeg" alt="RootX Cyber Security Workshop Certificate" loading="lazy" />
+              <figcaption>RootX Security • Cyber Security Workshop (image)</figcaption>
+            </figure>
+
+            <!-- PDF-based certificates with small preview + link -->
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/nptel.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="NPTEL DSA Java certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">NPTEL • Data Structures and Algorithms using Java</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/nptel.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/infosys.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Infosys Java certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Infosys Springboard • Java Programming Fundamentals</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/infosys.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/skill_india.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Skill India certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Skill India • Application Developer – Web & Mobile</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/skill_india.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/forage.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Forage Tata cybersecurity certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Tata • Cybersecurity Analyst Job Simulation (Forage)</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/forage.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/hashtag.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="TroubleShoot Ideathon certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">HashTag Official • TroubleShoot Ideathon</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/hashtag.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/hp.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="HP LIFE leadership certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">HP LIFE • Effective Leadership</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/hp.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/microsoft ai aware.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Microsoft SOAR AI to be Aware certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Microsoft • SOAR – AI to be Aware</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/microsoft ai aware.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/microsoft azure.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Microsoft Azure PostgreSQL certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Microsoft • Tune Queries in Azure Database for PostgreSQL</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/microsoft azure.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/nielit.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="NIELIT CCC certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">NIELIT • Course on Computer Concepts (CCC)</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/nielit.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/reliance1.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Reliance Application Security Analyst certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Reliance Foundation • Application Security Analyst</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/reliance1.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/reliance2.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Reliance cybersecurity certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Reliance Foundation • Cybersecurity Achievement</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/reliance2.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/simplilearn.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Simplilearn Copilot certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Simplilearn • Prompt Engineering with GitHub Copilot</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/simplilearn.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+            <figure class="cert-media-card cert-media-card--pdf">
+              <div class="pdf-preview">
+                <iframe src="assets/Certifications/udemy.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Udemy Android 14 & Kotlin certificate preview"></iframe>
+              </div>
+              <figcaption>
+                <span class="cert-media-title">Udemy • Android 14 & Kotlin Development Masterclass</span>
+                <span class="cert-media-meta"><a href="assets/Certifications/udemy.pdf" target="_blank" rel="noreferrer">Open full certificate (PDF)</a></span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="badges" class="section container" data-reveal>
+        <div class="panel">
+          <h2>Badges</h2>
+          <p style="margin:0 0 16px; color:var(--muted);">Micro-credentials that highlight my work with AI, APIs, and developer tooling.</p>
+          <div class="badge-grid" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; align-items:flex-start;">
+            <figure class="badge-card">
+              <img src="assets/badges/intel_appreciation.jpeg" alt="Intel AI Appreciate Badge" loading="lazy" />
+              <figcaption>Intel • AI Appreciate</figcaption>
+            </figure>
+            <figure class="badge-card">
+              <img src="assets/badges/intel_aware.jpeg" alt="Intel AI Aware Badge" loading="lazy" />
+              <figcaption>Intel • AI Aware</figcaption>
+            </figure>
+            <figure class="badge-card">
+              <img src="assets/badges/postman.jpeg" alt="Postman Student Expert Badge" loading="lazy" />
+              <figcaption>Postman • Student Expert</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 

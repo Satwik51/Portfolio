@@ -15,10 +15,36 @@ themeToggle?.addEventListener('click', () => {
 // Mobile nav toggle
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav-toggle');
+const dropdownParents = Array.from(document.querySelectorAll('.nav-item-has-dropdown'));
+
 navToggle?.addEventListener('click', () => {
 	const expanded = navToggle.getAttribute('aria-expanded') === 'true';
 	navToggle.setAttribute('aria-expanded', String(!expanded));
 	nav?.classList.toggle('open');
+});
+
+// Dropdown menu (More)
+dropdownParents.forEach((parent) => {
+	const toggle = parent.querySelector('.nav-dropdown-toggle');
+	const dropdown = parent.querySelector('.nav-dropdown');
+	if (!toggle || !dropdown) return;
+
+	toggle.addEventListener('click', (e) => {
+		e.stopPropagation();
+		const isOpen = parent.classList.contains('open');
+		dropdownParents.forEach((p) => p.classList.remove('open'));
+		parent.classList.toggle('open', !isOpen);
+		toggle.setAttribute('aria-expanded', String(!isOpen));
+	});
+});
+
+// Close dropdown on outside click
+document.addEventListener('click', () => {
+	dropdownParents.forEach((p) => {
+		const toggle = p.querySelector('.nav-dropdown-toggle');
+		p.classList.remove('open');
+		toggle?.setAttribute('aria-expanded', 'false');
+	});
 });
 
 // Elevation on scroll for header
@@ -80,6 +106,15 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
 	a.addEventListener('click', (e) => {
 		const id = a.getAttribute('href');
 		if (!id || id === '#') return;
+
+		// Close dropdown if link is inside it
+		const parentDropdown = a.closest('.nav-item-has-dropdown');
+		if (parentDropdown) {
+			parentDropdown.classList.remove('open');
+			const toggleBtn = parentDropdown.querySelector('.nav-dropdown-toggle');
+			toggleBtn?.setAttribute('aria-expanded', 'false');
+		}
+
 		const target = document.querySelector(id);
 		if (!target) return;
 		e.preventDefault();
